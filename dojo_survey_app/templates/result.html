@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Submitted Information:</h1>
+        <div id="submitted">
+            <p><span>First Name:</span> {{ request.session.first_name }}</p>
+            <p><span>Last Name:</span> {{ request.session.last_name }}</p>
+            <p><span>Email:</span> {{ request.session.email }}</p>
+            <p><span>Gender:</span> {{ request.session.gender }}</p>
+            <p><span>Campus:</span> {{ request.session.campus }}</p>
+            <p><span>Language:</span> {{ request.session.languages }}</p>
+            <p><span>Comments:</span> {{ request.session.comments }}</p>
+        </div>
+
+        <div id="return">
+            <a href="http://localhost:8000">Return</a>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="header">
+            <h1>Coding Dojo Survey</h1>
+            <p>Please fill out and submit the information below.</p>
+        </div>
+
+        <div id="survey">
+
+            <form action="/result" method="POST">
+                {% csrf_token %}
+
+                <div id="text">
+                    <p>Please fill out your information:</p>
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                </div>
+
+                <div id="gender">
+                    <p>Please select your gender:</p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="transgender" name="gender" value="transgender">
+                    <label for="transgender">Transgender</label>
+                    <input type="radio" id="nonbinary_nonconforming" name="gender" value="nonbinary_nonconforming">
+                    <label for="nonbinary_nonconforming">Non-Binary/Non-Conforming</label>
+                    <input type="radio" id="decline" name="gender" value="decline">
+                    <label for="decline">Prefer not to say</label><br>
+                </div>
+
+                <div id="location">
+                    <p>Please select your Dojo Location:</p>
+                    <label for="campus">Campus:</label>
+                    <select name="campus" id="campus">
+                        <option value="Arlington">Arlington</option>
+                        <option value="Bellevue">Bellevue</option>
+                        <option value="Boise">Boise</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="Dallas">Dallas</option>
+                        <option value="LA">LA</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="Oakland">Oakland</option>
+                        <option value="OC">OC</option>
+                        <option value="San Jose">San Jose</option>
+                        <option value="Tulsa">Tulsa</option>
+                        <option value="Online">Online</option>
+                    </select>
+                </div>
+
+                <div id="language">
+                    <p>Please select your interested language:</p>
+                    <input type="checkbox" id="html" name="language" value="html">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="css" name="language" value="css">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" id="javascript" name="language" value="javascript">
+                    <label for="javascript">Javascript</label>
+                    <input type="checkbox" id="python" name="language" value="python">
+                    <label for="python">Python</label>
+                    <input type="checkbox" id="jquery" name="language" value="jquery">
+                    <label for="jquery">Jquery</label>
+                </div>
+
+                <div id="comments">
+                    <p>Please submit additional comments:</p>
+                    <textarea name="comments"></textarea>
+                </div>
+
+        </div>
+
+        <div id="button">
+            <input type="submit" value="Submit">
+        </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+#container {
+    width: 100%;
+    height: 800px;
+    background-color: deepskyblue;
+}
+
+#header h1 {
+    color: darkblue;
+    text-align: center;
+    font-size: 40px;
+    padding: 15px;
+}
+
+#header p {
+    color: darkred;
+    font-size: 24px;
+    font-weight: bolder;
+    padding-left: 15px;
+    
+}
+
+#survey {
+    background-color: lightblue;
+    border: 3px black solid;
+    padding: 10px;
+    width: 900px;
+    margin: 40px auto;
+}
+
+#survey p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#text {
+    padding-bottom: 10px;
+}
+
+#text label {
+    padding: 5px;
+}
+
+#gender {
+    padding-bottom: 10px;
+}
+
+#gender label {
+    padding: 5px
+}
+
+#location{
+    padding-bottom: 10px;
+}
+
+#location label{
+    padding: 5px;
+}
+
+#language {
+    padding-bottom: 10px;
+}
+
+#language label {
+    padding: 5px;
+}
+
+#comments {
+    padding-bottom: 10px;
+}
+
+#comments label{
+    padding: 5px;
+}
+
+#button {
+    margin-left: 550px;
+    padding-bottom: 50px;
+}
+
+#button input {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: darkred;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: 1px black solid;
+    }
+
+h1 {
+    background-color: deepskyblue;
+    color: darkblue;
+    padding: 10px 10px 15px 10px;
+}
+
+#submitted{
+    background-color: lightblue;
+    border: 3px black solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 15px;
+}
+
+#submitted p {
+    padding: 5px;
+    font-size: 18px;
+}
+
+#submitted span {
+    font-weight: bold;
+}
+
+#return a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: darkred;
+    padding: 15px 40px 15px 25px;
+    border-radius: 5px;
+    border: 1px black solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 50px;
+    }
